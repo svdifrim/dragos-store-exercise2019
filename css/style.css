@@ -184,7 +184,7 @@ body {
 }
 
 .filters-header {
-  margin-top: 25px;
+  margin-top: 40px;
 }
 
 .filters-header,
@@ -236,7 +236,7 @@ body {
   width: 200px;
   padding: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  margin-top: 20px;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -249,4 +249,28 @@ body {
 .shop-price {
   color: #fbe47c;
   margin-top: 10px;
+}
+
+.advertisement {
+  position: absolute;
+  bottom: -130px;
+  left: 190px;
+  background: url("../images/product-1.jpg");
+  padding: 20px 105px 40px 20px;
+}
+
+.advertisement h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.advertisement h3 {
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+.advertisement h1 {
+  font-size: 30px;
+  color: #6364d8;
+  font-weight: 500;
 }
