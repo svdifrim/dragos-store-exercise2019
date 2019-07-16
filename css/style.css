@@ -12,6 +12,7 @@ body {
 .header {
   width: 100%;
   padding-bottom: 10px;
+  border-top: 2px solid #6364d8;
 }
 
 .header--yellow {
@@ -42,12 +43,14 @@ body {
 }
 
 .header-icon {
-  width: 10px;
+  width: 12px;
   margin-right: 5px;
 }
 
-.header-link:link,
-.header-link:visited {
+.header-link,
+.filters-item-link:link,
+.header-link,
+.filters-item-link:visited {
   text-decoration: none;
   color: rgba(99, 100, 216, 1);
 }
@@ -56,7 +59,9 @@ body {
   list-style: none;
 }
 
-.item {
+.item,
+.categories-item,
+.filters-item {
   display: inline;
   margin-left: 15px;
   cursor: pointer;
@@ -77,7 +82,7 @@ body {
 }
 
 .group-control input {
-  padding: 10px 10px 10px 30px;
+  padding: 12px 10px 10px 30px;
   border-radius: 3px;
   border: 1px solid #eeeeee;
   outline: none;
@@ -94,7 +99,7 @@ body {
 }
 
 .header-button {
-  padding: 10px 15px;
+  padding: 12px 15px;
   background-color: #6364d8;
   color: #ffffff;
   border: none;
@@ -117,6 +122,102 @@ body {
   background: #393ab1;
   color: #ffffff;
   position: absolute;
-  padding: 10px 15px;
+  padding: 12px 15px;
   right: -35px;
+}
+
+.categories {
+  background: #ffffff;
+  position: fixed;
+  top: 81px;
+  left: 200px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  padding: 15px 140px 15px 15px;
+  border-radius: 3px;
+}
+
+.categories h4 {
+  color: #a3a3a3;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.categories h2 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.categories-list {
+  margin-bottom: 20px;
+}
+
+.categories-item {
+  margin: 0;
+  margin-bottom: 10px;
+  display: block;
+  color: #b4b4b4;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.categories-active {
+  color: #fbe47c;
+}
+
+.container-sm {
+  margin-left: 490px;
+  padding: 20px 0px;
+  width: 850px;
+}
+
+.filters h1 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.filters-header,
+.filters-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters-header span {
+  color: #b4b4b4;
+  margin-right: 10px;
+}
+
+.filters-header img {
+  padding: 5px 8px;
+  border: 1px solid #b4b4b4;
+}
+
+.filters-header img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.filters-item:first-child {
+  margin: 0;
+}
+
+.filters-item {
+  color: #b4b4b4;
+}
+
+.filters-item-link span {
+  display: block;
+}
+
+.filters-sort {
+  margin-top: 20px;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+.shop-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
