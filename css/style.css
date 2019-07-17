@@ -9,6 +9,18 @@ body {
   font-size: 16px;
 }
 
+button,
+.categories h2,
+.header-button,
+.item,
+.categories-item,
+.close,
+.filters-header img,
+.filters-item a,
+.shop-item {
+  cursor: pointer;
+}
+
 .viewport {
   min-height: 100vh;
   position: relative;
@@ -69,7 +81,6 @@ body {
 .filters-item {
   display: inline;
   margin-left: 15px;
-  cursor: pointer;
 }
 
 .form {
@@ -107,7 +118,6 @@ body {
   border: none;
   border-radius: 3px;
   position: relative;
-  cursor: pointer;
   outline: none;
   margin-right: 36px;
   margin: 0px 36px 0px 20px;
@@ -149,7 +159,6 @@ body {
   margin-bottom: 15px;
   font-weight: 500;
   font-size: 14px;
-  cursor: pointer;
 }
 
 .categories-list {
@@ -282,6 +291,7 @@ body {
   top: 0;
   left: 0;
   min-height: 100vh;
+  display: none;
 }
 
 .modal {
@@ -291,15 +301,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 3px;
   background-color: #ffffff;
-  background-color: red;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .modal-flex {
   display: flex;
-}
-
-.col-1 {
 }
 
 .modal img {
@@ -311,20 +319,73 @@ body {
   margin-left: 40px;
 }
 
+.modal-stars i {
+  color: #ff5a00;
+  font-size: 12px;
+}
+
+.modal-rating span {
+  color: #b4b4b4;
+  font-size: 14px;
+}
+
+.modal-title {
+  margin: 20px 0;
+}
+
+.modal-title h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .modal-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px 0;
+}
+
+.modal-item span:first-child {
+  color: #fbe47c;
+}
+
+.modal-item span:last-child {
+  color: #b4b4b4;
 }
 
 .modal-button-cart button {
   width: 100%;
   background: transparent;
-  padding: 10px 20px;
+  border: none;
+  background: #6364d8;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin: 10px 0;
   text-align: left;
+}
+
+.modal-text {
+  margin: 10px 0;
 }
 
 .modal-button-details {
   text-align: center;
   margin-top: 20px;
+}
+
+.modal-button-details button {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #b4b4b4;
+  color: #b4b4b4;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.close i {
+  font-size: 20px;
 }
