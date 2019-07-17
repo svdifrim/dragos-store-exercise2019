@@ -1,5 +1,35 @@
-/* margin right-leftt */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+button,
+.menu-burger,
+.categories h2,
+.header-button,
+.item,
+.categories-item,
+.close,
+.filters-header img,
+.filters-item a,
+.shop-item {
+  cursor: pointer;
+  outline: none;
+}
+/* reset */
+
+/* margin right-leftt */
 .mrl-1 {
   margin: 0px 10px;
 }
@@ -11,3 +41,4 @@
 .mrl-3 {
   margin: 0px 30px;
 }
+/* margin right-leftt */

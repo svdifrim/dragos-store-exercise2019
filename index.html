@@ -6,214 +6,295 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/mediaQueries.css" />
+    <link rel="stylesheet" href="./css/fontawesome/all.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./css/webfonts/" type="text/html" /> -->
+    <title>Store</title>
   </head>
   <body>
+    <div class="menu-burger">
+      <div class="menu-line"></div>
+    </div>
+
     <header class="header header--yellow">
       <div class="container">
-        <div class="header-items">
-          <div>
-            <h1>Amazing store</h1>
-          </div>
-          <div class="dflex-align-center">
-            <img src="./images/map.png" alt="map" class="header-icon" />
-            <span
-              >My city: <a href="#" class="header-link">Los Angeles</a></span
-            >
-          </div>
-          <div class="dflex-align-center">
-            <img src="./images/phone.png" alt="phone" class="header-icon" />
-            <span>8 800 505-04-83</span>
-          </div>
-          <div>
-            <ul class="items">
-              <li class="item">Shipping</li>
-              <li class="item">Blog</li>
-              <li class="item">Company</li>
-              <li class="item">My account</li>
-            </ul>
-          </div>
-        </div>
-        <div class="form-container">
-          <form class="form">
-            <div class="group-control">
-              <img src="./images/search.png" alt="search" class="search-img" />
-              <input type="text" placeholder="Search products by SKU or name" />
-            </div>
+        <div class="dflex-align-center">
+          <div class="container-col-1 container-col-1-padding">
             <div>
+              <h1>Amazing store</h1>
+            </div>
+          </div>
+          <div class="container-col-2">
+            <div class="header-items ">
+              <div class="dflex-align-center">
+                <img src="./images/map.png" alt="map" class="header-icon" />
+                <span
+                  >My city:
+                  <a href="#" class="header-link">Los Angeles</a></span
+                >
+              </div>
+              <div class="dflex-align-center">
+                <img src="./images/phone.png" alt="phone" class="header-icon" />
+                <span>8 800 505-04-83</span>
+              </div>
               <div>
-                <button class="dflex-align-center header-button">
-                  <img src="./images/cart.png" alt="cart" />
-                  <!-- mrl: margin left right -->
-                  <span class="mrl-1">My cart</span>
-                  <span class="count">12</span>
-                </button>
+                <ul class="items">
+                  <li class="item">Shipping</li>
+                  <li class="item">Blog</li>
+                  <li class="item">Company</li>
+                  <li class="item">My account</li>
+                </ul>
               </div>
             </div>
-          </form>
+            <div class="form-container">
+              <form class="form">
+                <div class="group-control">
+                  <img
+                    src="./images/search.png"
+                    alt="search"
+                    class="search-img"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Search products by SKU or name"
+                  />
+                </div>
+                <div>
+                  <div>
+                    <button class="dflex-align-center header-button">
+                      <img src="./images/cart.png" alt="cart" />
+                      <!-- mrl: margin left right -->
+                      <span class="mrl-1">My cart</span>
+                      <span class="count">12</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="categories">
-      <div>
-        <h4>All categories</h4>
-      </div>
-      <div>
-        <h2>FACE</h2>
-        <ul class="categories-list">
-          <li class="categories-item categories-active">Creams & gets</li>
-          <li class="categories-item">Patches</li>
-          <li class="categories-item">Emulsions</li>
-          <li class="categories-item">Toners</li>
-          <li class="categories-item">Face cleansing</li>
-          <li class="categories-item">Make up removal</li>
-          <li class="categories-item">Scrubs</li>
-          <li class="categories-item">Peeling</li>
-          <li class="categories-item">Masks</li>
-        </ul>
-      </div>
-      <div>
-        <h2>BODY</h2>
-        <h2>FOOT</h2>
-        <h2>HANDS</h2>
-        <h2>HAIR</h2>
-        <h2>MAKEUP</h2>
-      </div>
-    </section>
+    <main class="container flex-container">
+      <div class="container-col-1">
+        <section class="categories">
+          <div>
+            <h4>All categories</h4>
+          </div>
+          <div>
+            <h2>FACE</h2>
+            <ul class="categories-list">
+              <li class="categories-item categories-active">Creams & gets</li>
+              <li class="categories-item">Patches</li>
+              <li class="categories-item">Emulsions</li>
+              <li class="categories-item">Toners</li>
+              <li class="categories-item">Face cleansing</li>
+              <li class="categories-item">Make up removal</li>
+              <li class="categories-item">Scrubs</li>
+              <li class="categories-item">Peeling</li>
+              <li class="categories-item">Masks</li>
+            </ul>
+          </div>
+          <div>
+            <h2>BODY</h2>
+            <h2>FOOT</h2>
+            <h2>HANDS</h2>
+            <h2>HAIR</h2>
+            <h2>MAKEUP</h2>
+          </div>
 
-    <div class="advertisement">
-      <div><h4>TODAY'S OFFER</h4></div>
-      <div>
-        <div><h3>Nooni sprout</h3></div>
-        <div><h3>Smoothing toner</h3></div>
-        <h1>30% OFF</h1>
+          <div class="advertisement">
+            <div><h4>TODAY'S OFFER</h4></div>
+            <div>
+              <div>
+                <h3>Nooni sprout</h3>
+                <h3>Smoothing toner</h3>
+                <h1>30% OFF</h1>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
 
-    <section class="container-sm filters">
-      <div class="filters-header">
-        <h1>Creams & gels</h1>
-        <div class="dflex-align-center">
-          <span>Showing 60 of 392</span>
-          <img src="./images/arrow-left.png" alt="left arrow" />
-          <img src="./images/arrow-right.png" alt="right arrow" />
-        </div>
-      </div>
-      <div class="filters-sort">
-        <div>
-          <ul>
-            <li class="filters-item">
-              BRAND: <a href="#" class="filters-item-link">ALL BRANDS</a>
+      <div class="container-col-2">
+        <section class="container-sm filters">
+          <div class="filters-header">
+            <h1>Creams & gels</h1>
+            <div class="dflex-align-center">
+              <span>Showing 60 of 392</span>
+              <img src="./images/arrow-left.png" alt="left arrow" />
+              <img src="./images/arrow-right.png" alt="right arrow" />
+            </div>
+          </div>
+          <div class="filters-sort">
+            <div>
+              <ul>
+                <li class="filters-item">
+                  BRAND: <a href="#" class="filters-item-link">ALL BRANDS</a>
+                </li>
+                <li class="filters-item">
+                  SKIN TYPE:
+                  <a href="#" class="filters-item-link">FOR OILY SKIN</a>
+                </li>
+                <li class="filters-item">
+                  AGE: <a href="#" class="filters-item-link">30+</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <ul>
+                <li class="filters-item">
+                  SORT:<a href="#" class="filters-item-link"
+                    >BY <span>POPULARITY</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class=" shop">
+          <ul class="shop-items">
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-2.jpg" alt="product 2" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
             </li>
-            <li class="filters-item">
-              SKIN TYPE: <a href="#" class="filters-item-link">FOR OILY SKIN</a>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-6.png" alt="product 6" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
             </li>
-            <li class="filters-item">
-              AGE: <a href="#" class="filters-item-link">30+</a>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-3.jfif" alt="product 3" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
+            </li>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-8.jpg" alt="product 8" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
+            </li>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-7.jpg" alt="product 7" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
+            </li>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-5.jpg" alt="product 5" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
+            </li>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-9.jpg" alt="product 9" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
+            </li>
+            <li class="shop-item">
+              <div>
+                <img src="./images/product-4.jpg" alt="product 4" />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem beatae quas
+                </p>
+                <p class="shop-price">$4.00</p>
+              </div>
             </li>
           </ul>
-        </div>
+        </section>
+      </div>
+    </main>
 
-        <div>
-          <ul>
-            <li class="filters-item">
-              SORT:<a href="#" class="filters-item-link"
-                >BY <span>POPULARITY</span></a
-              >
-            </li>
-          </ul>
+    <section class="overlay">
+      <div class="modal">
+        <div class="close">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-flex">
+          <div class="col-1">
+            <div>
+              <img src="./images/product-2.jpg" alt="product 2" />
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="modal-rating">
+              <div class="modal-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div>
+                <span>21 reviews</span>
+              </div>
+            </div>
+            <div class="modal-title">
+              <h3>Missha All Around Safe</h3>
+              <h3>Block Sebum Zero Sun</h3>
+            </div>
+            <div class="modal-item">
+              <span>$4.00</span>
+              <span>50 ml</span>
+            </div>
+            <div class="modal-button-cart">
+              <button>Add to cart</button>
+            </div>
+            <div class="modal-text">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempore eius molestias laudantium laborum voluptates earum sint
+                distinctio velit modi quas?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-button-details">
+          <button>More details</button>
         </div>
       </div>
-    </section>
-
-    <section class="container-sm shop">
-      <ul class="shop-items">
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-2.jpg" alt="product 2" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-6.png" alt="product 6" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-3.jfif" alt="product 3" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-8.jpg" alt="product 8" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-7.jpg" alt="product 7" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-5.jpg" alt="product 5" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-9.jpg" alt="product 9" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-        <li class="shop-item">
-          <div>
-            <img src="./images/product-4.jpg" alt="product 4" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
-              beatae quas
-            </p>
-            <p class="shop-price">$4.00</p>
-          </div>
-        </li>
-      </ul>
     </section>
   </body>
 </html>
