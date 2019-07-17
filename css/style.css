@@ -29,6 +29,19 @@
 .container {
   max-width: 114rem;
   margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.container-col-1 {
+  position: relative;
+}
+
+.container-col-2 {
+  margin-left: 29rem;
 }
 
 .dflex-align-center {
@@ -72,7 +85,7 @@
 }
 
 .group-control input {
-  padding: 12px 10px 10px 30px;
+  padding: 13px 10px 10px 30px;
   border-radius: 3px;
   border: 1px solid #eeeeee;
   outline: none;
@@ -118,10 +131,10 @@
 .categories {
   background: #ffffff;
   position: absolute;
-  top: 8.1rem;
-  left: 19rem;
+  top: -7rem;
+  left: 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  padding: 15px 140px 15px 15px;
+  padding: 15px 180px 15px 15px;
   border-radius: 3px;
 }
 
@@ -159,10 +172,10 @@
   color: #fbe47c;
 }
 
-.container-sm {
-  margin-left: 49rem;
-  max-width: 84rem;
-}
+/* .container-sm {
+  margin-left: 29rem;
+  max-width: 85rem;
+} */
 
 .filters h1 {
   font-weight: 500;
@@ -244,26 +257,26 @@
 
 .advertisement {
   position: absolute;
-  bottom: -130px;
-  left: 190px;
+  bottom: -270px;
+  left: 0;
   background: url("../images/product-1.jpg");
-  padding: 20px 105px 40px 20px;
-}
-
-.advertisement h4 {
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-
-.advertisement h3 {
-  font-weight: 500;
-  margin: 40px 0;
+  padding: 20px 100px 40px 20px;
 }
 
 .advertisement h1 {
   font-size: 3rem;
   color: #6364d8;
   font-weight: 500;
+}
+
+.advertisement h3 {
+  font-weight: 500;
+}
+
+.advertisement h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 80px;
 }
 
 .overlay {
