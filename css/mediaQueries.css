@@ -1,0 +1,65 @@
+@media only screen and (max-width: 992px) {
+  .menu-burger {
+    width: 25px;
+    height: 30px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+  }
+
+  .menu-line {
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    position: relative;
+  }
+
+  .menu-line::after {
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+  }
+
+  .menu-line::before {
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -8px;
+  }
+
+  .menu-line-close {
+    width: 100%;
+    height: 3px;
+    background: transparent;
+    position: relative;
+  }
+
+  .menu-line-close::after {
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .menu-line-close::before {
+    content: "";
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: rotate(-45deg);
+  }
+}
