@@ -259,11 +259,12 @@
 
 .advertisement {
   position: absolute;
-  bottom: -260px;
+  bottom: -340px;
   left: 0;
   background: url("../images/product-1.jpg");
   padding: 20px 100px 40px 20px;
   width: 100%;
+  height: 320px;
 }
 
 .advertisement h1 {
@@ -279,7 +280,7 @@
 .advertisement h4 {
   font-size: 1.4rem;
   font-weight: 500;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .overlay {
