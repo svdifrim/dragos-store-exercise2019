@@ -185,7 +185,7 @@
 }
 
 .filters-header {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .filters-header,
@@ -222,7 +222,7 @@
 }
 
 .filters-sort {
-  margin-top: 2rem;
+  margin-top: 4rem;
   border-bottom: 1px solid #b4b4b4;
 }
 
