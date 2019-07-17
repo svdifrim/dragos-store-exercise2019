@@ -274,3 +274,57 @@ body {
   color: #6364d8;
   font-weight: 500;
 }
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+}
+
+.modal {
+  width: 700px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  background-color: red;
+}
+
+.modal-flex {
+  display: flex;
+}
+
+.col-1 {
+}
+
+.modal img {
+  width: 300px;
+  height: auto;
+}
+
+.col-2 {
+  margin-left: 40px;
+}
+
+.modal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-button-cart button {
+  width: 100%;
+  background: transparent;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.modal-button-details {
+  text-align: center;
+  margin-top: 20px;
+}
