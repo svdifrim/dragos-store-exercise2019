@@ -1,4 +1,8 @@
 @media only screen and (max-width: 992px) {
+  html {
+    font-size: 58%;
+  }
+
   .header {
     border: none;
     padding: 20px;
@@ -16,6 +20,10 @@
   .container-col-2 {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .container {
+    margin: 8rem auto;
   }
 
   /* menu mobile */
@@ -96,4 +104,10 @@
   /* shop items */
 
   /* shop items */
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 55.5%;
+  }
 }
